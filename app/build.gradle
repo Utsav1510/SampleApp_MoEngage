@@ -1,0 +1,113 @@
+
+
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.sampleapp_moengage'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.sampleapp_moengage"
+        minSdk 22
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+//allprojects {
+//    repositories {
+//        mavenCentral()
+//    }
+//}
+dependencies {
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.moengage:rich-notification:4.5.0")
+    implementation("com.moengage:inapp:6.7.0")
+    // Add the dependencies for any other desired Firebase products
+    implementation("com.moengage:inbox-ui:2.4.0")
+
+//    implementation 'androidx.appcompat:appcompx`at:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation("com.moengage:cards-ui:1.4.0")
+    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
+    implementation("com.moengage:moe-android-sdk:12.8.00")
+    def Firebase_Auth_Version = "16.0.5"
+    def Firebase_Messaging_Version = "17.3.4"
+
+    implementation "com.github.bumptech.glide:glide:4.14.2"
+
+    annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
+
+    implementation "com.google.firebase:firebase-messaging:$Firebase_Messaging_Version"
+    implementation "com.google.firebase:firebase-auth:$Firebase_Auth_Version"
+    // core moengage features
+//    implementation(moengage.core)
+    // optionally add this to use the cards feature
+//    implementation(moengage.cardsUi)
+//    // optionally add this if you are using the core module of cards
+//    implementation(moengage.cardsCore)
+//    // optionally add this to use the geofence feature
+//    implementation(moengage.geofence)
+//    // optionally add this to use the Huaewi PushKit feature
+////    implementation(moengage.pushKit)
+//    // optionally add this to use the Push Amp Plus feature
+////    implementation(moengage.pushAmpPlus)
+//    // optionally add this to use the Inbox UI feature
+//    implementation(moengage.inboxUi)
+//    // optionally add this if you are using the core module of Inbox
+//    implementation(moengage.inboxCore)
+//    // optionally add this to use the Push Templates feature
+//    implementation(moengage.richNotification)
+//    // optionally add this to use the Device Trigger feature
+//    implementation(moengage.deviceTrigger)
+//    // optionally add this to use the Push Amp feature
+////    implementation(moengage.pushAmp)
+//    // optionally add this to use the InApp feature
+//    implementation(moengage.inapp)
+
+    implementation("com.moengage:moe-android-sdk:12.8.00")
+    implementation("androidx.core:core:1.10.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.lifecycle:lifecycle-process:2.6.1")
+}

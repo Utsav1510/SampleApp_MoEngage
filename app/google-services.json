@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "402643015277",
+    "project_id": "moedroid-f2b23",
+    "storage_bucket": "moedroid-f2b23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402643015277:android:05cc86984340c07e531164",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402643015277-pf8d9v5msjmi8m52c61u4sfjepb6gbkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhYT6R1I0txBTFMljhrrdkl594TWkoDIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402643015277-pf8d9v5msjmi8m52c61u4sfjepb6gbkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402643015277:android:92d2c476dd309f7b531164",
+        "android_client_info": {
+          "package_name": "com.example.sampleapp_moengage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402643015277-pf8d9v5msjmi8m52c61u4sfjepb6gbkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhYT6R1I0txBTFMljhrrdkl594TWkoDIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402643015277-pf8d9v5msjmi8m52c61u4sfjepb6gbkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

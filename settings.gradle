@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+//enable version catalog feature, required only if you are using gradle version below 7.4
+// adding moengage catalog
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+//    versionCatalogs {
+//        create("moengage") {
+//            from("com.moengage:android-dependency-catalog:2.9.2")
+//        }
+//    }
+}
+rootProject.name = "SampleApp_MoEngage"
+include ':app'
