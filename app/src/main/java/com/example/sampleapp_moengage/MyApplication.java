@@ -16,7 +16,7 @@ import com.moengage.inapp.MoEInAppHelper;
 
 public class MyApplication extends Application {
 //K5RQAWVLPPTTIA29F1XKRAGW
-    private String appId="K5RQAWVLPPTTIA29F1XKRAGW";
+    private String appId="2877NHMD0TOHATHC6NNHDERW";
     @Override
     public void onCreate() {
         super.onCreate();
